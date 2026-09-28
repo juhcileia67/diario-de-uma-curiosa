@@ -93,6 +93,16 @@
  .pills{overflow-x:auto!important}.card{width:100%!important;max-width:100%!important}.thumb{min-width:0!important}
  img,svg,video,canvas{max-width:100%!important;height:auto}
 }
+
+/* POSTS MOBILE: o card inteiro rola junto, sem texto vazando */
+@media(max-width:1100px){
+ .modal{padding:14px 10px!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch}
+ .modal-box{width:100%!important;max-width:760px!important;max-height:none!important;min-height:0!important;margin:0 auto 20px!important;padding:18px!important;overflow:visible!important}
+ #modalContent{overflow:visible!important;max-height:none!important}
+ #modalContent>img{max-height:none!important;aspect-ratio:16/9;object-fit:cover}
+ #modalContent h1{font-size:clamp(28px,8vw,40px)!important}
+ #modalContent p{font-size:17px!important;line-height:1.65!important}
+}
 </style></head><body>
 <div class="wrap">
 <header class="nav glass"><div class="brand">DIÁRIO DE UMA CURIOSA <i>| Ju 💜</i></div><nav class="menu"><button class="on" onclick="filterPosts('Todos')">⌂ Início</button><button onclick="filterPosts('Projetos')">▢ Projetos</button><button onclick="filterPosts('Games')">🎮 Games</button><button onclick="filterPosts('Beleza')">♡ Beleza</button><button onclick="filterPosts('TikTok')">♪ TikTok</button><button onclick="filterPosts('Tecnologia')">▣ Tecnologia</button><button onclick="filterPosts('Vida & Ideias')">♧ Vida & Ideias</button></nav><button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Abrir menu">☰</button><button class="search" onclick="toggleSearch()" aria-label="Abrir busca">⌕</button></header>
