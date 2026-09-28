@@ -7,7 +7,7 @@
   <meta name="description" content="Meu espaço, minhas ideias. Um espaço simples, real e sem categoria certa sobre tecnologia, games, projetos, beleza e vida.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-dark: #07030e;
@@ -346,7 +346,7 @@
       border: 1px dashed rgba(236, 72, 153, 0.4);
       padding: 12px 16px;
       border-radius: var(--radius-md);
-      font-family: 'Caveat', cursive;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 1.25rem;
       color: #f472b6;
       line-height: 1.3;
@@ -911,7 +911,7 @@
     }
 
     .cat-banner-text {
-      font-family: 'Caveat', cursive;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 1.55rem;
       color: #f472b6;
       line-height: 1.2;
@@ -1374,7 +1374,7 @@
       border-color:rgba(255,255,255,.08);box-shadow:0 10px 35px rgba(0,0,0,.22)
     }
     .brand-logo{font-size:.98rem;text-transform:none;letter-spacing:-.2px}
-    .brand-author{opacity:.72;font-family:'Caveat',cursive;font-size:1.12rem}
+    .brand-author{opacity:.72;font-family:'Space Grotesk', sans-serif;font-size:1.12rem}
     .nav-btn{font-size:.82rem;padding:8px 11px}
     .nav-btn.active{background:rgba(167,139,250,.14);box-shadow:none;color:#eadcff}
     .search-trigger-btn{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.09)}
@@ -1395,7 +1395,7 @@
       radial-gradient(circle at 72% 65%,rgba(167,139,250,.30),transparent 32%),
       linear-gradient(145deg,#201523,#100c13);border:1px solid rgba(255,255,255,.08)}
     .hero-artwork>svg{display:none}
-    .hero-artwork:before{content:'curiosa por natureza.';position:absolute;left:30px;top:34px;font-family:'Caveat',cursive;font-size:2.25rem;color:#f8e7f1;transform:rotate(-4deg)}
+    .hero-artwork:before{content:'curiosa por natureza.';position:absolute;left:30px;top:34px;font-family:'Space Grotesk', sans-serif;font-size:2.25rem;color:#f8e7f1;transform:rotate(-4deg)}
     .hero-artwork:after{content:'tecnologia  •  games  •  beleza  •  vida';position:absolute;left:30px;right:30px;bottom:30px;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);color:#d9cedc;font-size:.8rem;letter-spacing:.7px;text-align:center}
     .neon-wall-sign{right:28px;top:95px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);font-size:1.25rem;color:#f1d8e7;text-shadow:none;animation:none;text-align:left;line-height:1.5;padding:20px 22px;transform:rotate(3deg)}
 
@@ -1407,7 +1407,7 @@
     .quote-banner{min-height:110px;grid-template-columns:.85fr 1.15fr;margin:24px 0 34px;border-radius:24px}
     .banner-graphic{background:linear-gradient(135deg,rgba(167,139,250,.14),rgba(249,168,212,.08));padding:22px 28px}
     .banner-graphic:before{display:none}
-    .banner-tagline{font-family:'Caveat',cursive;font-size:1.65rem;text-transform:none;letter-spacing:0;color:#f4e9f5;text-shadow:none;line-height:1.05}
+    .banner-tagline{font-family:'Space Grotesk', sans-serif;font-size:1.65rem;text-transform:none;letter-spacing:0;color:#f4e9f5;text-shadow:none;line-height:1.05}
     .banner-quote{background:rgba(255,255,255,.018);border-left-color:rgba(255,255,255,.07)}
     .quote-author{color:#c9afd5}
 
@@ -1474,6 +1474,105 @@
       .footer-bottom{gap:10px;flex-direction:column;align-items:flex-start}
     }
 
+  </style>
+
+  <style id="axis-reference-redesign">
+    /* Visual baseado na referência enviada pela Ju — sem fontes manuscritas */
+    :root{
+      --bg-dark:#03040f;--bg-card:rgba(5,8,29,.90);--bg-card-hover:rgba(10,13,43,.96);
+      --bg-surface:#06081b;--primary-purple:#a855f7;--primary-light:#d8b4fe;
+      --primary-glow:#7c3aed;--accent-magenta:#f000b8;--accent-pink:#ff4fc8;
+      --accent-cyan:#5ee7ff;--text-main:#fff;--text-muted:#c7c8da;--text-dim:#9295b0;
+      --border-purple:rgba(168,85,247,.42);--border-purple-glow:rgba(217,70,239,.72);
+      --neon-shadow:0 0 26px rgba(126,34,206,.18);
+    }
+    body{
+      background:
+        radial-gradient(circle at 9% 0%,rgba(126,34,206,.18),transparent 25%),
+        radial-gradient(circle at 91% 12%,rgba(236,72,153,.11),transparent 26%),
+        linear-gradient(180deg,#03040f 0%,#05051a 45%,#02030c 100%);
+      font-family:'Plus Jakarta Sans',sans-serif;
+    }
+    .container{max-width:1280px}
+    header.site-header{top:8px;margin-bottom:14px}
+    .nav-container{
+      background:rgba(3,5,20,.88);border:1px solid rgba(168,85,247,.35);
+      border-radius:15px;padding:8px 16px;box-shadow:0 0 30px rgba(126,34,206,.15)
+    }
+    .brand-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:.6px;text-transform:uppercase}
+    .brand-author{font-family:'Space Grotesk',sans-serif!important;text-transform:none;font-size:1rem!important;font-weight:500}
+    .nav-btn{border-radius:9px;font-size:.79rem}
+    .nav-btn.active,.nav-btn:hover{background:linear-gradient(135deg,rgba(126,34,206,.65),rgba(168,85,247,.35));color:#fff;box-shadow:inset 0 0 0 1px rgba(216,180,254,.28)}
+    .search-trigger-btn{border-radius:11px;border-color:rgba(168,85,247,.45)}
+    .glass-card{background:linear-gradient(145deg,rgba(5,8,29,.94),rgba(4,5,20,.90));border:1px solid rgba(168,85,247,.34);box-shadow:0 12px 38px rgba(0,0,0,.34)}
+    .glass-card:hover{border-color:rgba(217,70,239,.66);box-shadow:0 14px 42px rgba(0,0,0,.42),0 0 24px rgba(126,34,206,.12)}
+    .hero-section{
+      border-radius:18px;position:relative;overflow:hidden;
+      background:
+        radial-gradient(circle at 78% 28%,rgba(236,72,153,.28),transparent 18%),
+        radial-gradient(circle at 65% 48%,rgba(124,58,237,.28),transparent 28%),
+        linear-gradient(110deg,#09051d 0%,#0a0826 45%,#08041d 100%);
+    }
+    .hero-section:before{
+      content:'';position:absolute;inset:0;opacity:.25;pointer-events:none;
+      background-image:linear-gradient(rgba(168,85,247,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(168,85,247,.11) 1px,transparent 1px);
+      background-size:38px 38px;mask-image:linear-gradient(to right,transparent,black 45%,black)
+    }
+    .hero-grid{min-height:440px;padding:44px 34px;grid-template-columns:.9fr 1.1fr}
+    .hero-eyebrow{color:#e879f9;font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:2.3px}
+    .hero-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.5rem,5vw,4.2rem);font-weight:700;letter-spacing:-1.8px;text-shadow:0 0 30px rgba(168,85,247,.22)}
+    .hero-desc{font-size:1rem;line-height:1.7;color:#d4d4e5}
+    .btn-primary{background:linear-gradient(100deg,#7c3aed,#c026d3);color:#fff;border:1px solid rgba(232,121,249,.65);box-shadow:0 0 24px rgba(168,85,247,.30)}
+    .btn-primary:hover{background:linear-gradient(100deg,#8b5cf6,#db27d7);color:#fff;box-shadow:0 0 34px rgba(217,70,239,.38)}
+    .hero-artwork{
+      min-height:350px;border-radius:14px;
+      background:
+        radial-gradient(circle at 70% 22%,#ef4dc8 0 6%,rgba(236,72,153,.26) 7%,transparent 19%),
+        linear-gradient(155deg,rgba(37,12,75,.86),rgba(5,6,24,.9));
+      border:1px solid rgba(168,85,247,.35)
+    }
+    .hero-artwork:before{content:'AXIS';font-family:'Space Grotesk',sans-serif!important;font-weight:700;letter-spacing:8px;font-size:3.5rem;color:rgba(216,180,254,.24);transform:none;left:50%;top:42%;translate:-50% -50%}
+    .hero-artwork:after{content:'GAMES  •  CRIAÇÃO  •  TECNOLOGIA  •  VIDA';font-family:'Space Grotesk',sans-serif;letter-spacing:1.6px;background:rgba(3,5,20,.66);border-color:rgba(168,85,247,.32);color:#e8ddf4}
+    .neon-wall-sign{font-family:'Space Grotesk',sans-serif!important;font-size:.92rem;font-weight:600;line-height:1.8;letter-spacing:.5px;text-transform:uppercase;color:#f0abfc;text-shadow:0 0 12px rgba(217,70,239,.55);border-color:rgba(217,70,239,.35);background:rgba(4,5,22,.62);transform:none}
+    .category-pills-bar{border-radius:14px;background:rgba(3,5,20,.8);border:1px solid rgba(168,85,247,.30);padding:9px;justify-content:center}
+    .cat-pill{border-radius:10px;border-color:rgba(168,85,247,.28);background:rgba(9,10,34,.85);font-size:.82rem}
+    .cat-pill:hover,.cat-pill.active{background:linear-gradient(135deg,#5b21b6,#8b22c9);border-color:#c084fc;color:#fff;box-shadow:0 0 16px rgba(168,85,247,.25);transform:none}
+    .quote-banner{border-radius:15px;min-height:116px}
+    .banner-graphic{background:linear-gradient(120deg,#16072d,#260a48 55%,#0b0827)}
+    .banner-tagline{font-family:'Space Grotesk',sans-serif!important;text-transform:uppercase;letter-spacing:2px;font-size:1.25rem;color:#f0abfc;text-shadow:0 0 16px rgba(217,70,239,.38)}
+    .banner-quote{background:linear-gradient(135deg,rgba(7,8,30,.96),rgba(17,7,39,.94));border-left-color:rgba(168,85,247,.35)}
+    .section-title{font-family:'Space Grotesk',sans-serif;font-size:1.35rem}
+    .featured-card,.post-card,.about-widget,.social-widget,.categories-widget,.cat-banner-widget{border-radius:14px}
+    .featured-card{grid-template-columns:1.05fr .95fr}
+    .featured-thumb,.card-thumb{background:linear-gradient(145deg,#12062b,#06071d)}
+    .featured-thumb svg,.card-thumb svg{opacity:1;filter:saturate(1.25) contrast(1.05)}
+    .featured-title,.card-title,.about-title,.widget-title{font-family:'Space Grotesk',sans-serif}
+    .post-badge{border-radius:7px!important;background:rgba(126,34,206,.72)!important;color:#fff!important;border-color:rgba(216,180,254,.28)!important}
+    .posts-grid{grid-template-columns:repeat(3,1fr)}
+    .card-thumb{height:165px}
+    .card-body{padding:17px}
+    .card-desc{color:#b8bbcf}
+    .post-action-btn{background:rgba(91,33,182,.36);border-color:rgba(168,85,247,.48)}
+    .featured-card:hover .post-action-btn,.post-card:hover .post-action-btn{background:#7c3aed;color:#fff;box-shadow:0 0 15px rgba(168,85,247,.35)}
+    .content-layout{grid-template-columns:minmax(0,1fr) 300px}
+    .about-avatar-wrap{background:linear-gradient(135deg,#7c3aed,#ec4899);box-shadow:0 0 22px rgba(168,85,247,.24)}
+    .about-subtitle{color:#d8b4fe}
+    .btn-secondary{border-color:rgba(168,85,247,.4);background:rgba(91,33,182,.18)}
+    .btn-secondary:hover{background:#6d28d9;color:#fff}
+    .social-btn{border-color:rgba(168,85,247,.35);border-radius:10px}
+    .social-btn:hover{background:#6d28d9;color:#fff;border-color:#a855f7}
+    .cat-banner-widget{background:linear-gradient(145deg,rgba(38,10,72,.85),rgba(4,6,25,.95))}
+    .cat-banner-text{font-family:'Space Grotesk',sans-serif!important;color:#e9d5ff;text-shadow:0 0 10px rgba(168,85,247,.35)}
+    footer.site-footer{background:#030410;border-top:1px solid rgba(168,85,247,.25)}
+    .modal-container{background:#07091c;border:1px solid rgba(168,85,247,.42)}
+    .modal-title{font-family:'Space Grotesk',sans-serif}
+    @media(max-width:1050px){.posts-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){
+      .hero-grid{padding:30px 20px 20px}.hero-title{font-size:2.55rem}
+      .hero-artwork{min-height:250px}.hero-artwork:before{font-size:2.5rem}
+      .posts-grid{grid-template-columns:1fr}.featured-card{grid-template-columns:1fr}
+      .nav-container{border-radius:12px}
+    }
   </style>
 </head>
 <body>
