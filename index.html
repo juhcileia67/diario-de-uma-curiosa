@@ -83,6 +83,16 @@
   .modal-box{width:calc(100% - 20px);max-height:88vh;padding:20px}
   .menu.open{display:flex!important;position:absolute;top:64px;left:8px;right:8px;flex-direction:column;padding:8px;background:#0b0616f7;border:1px solid #7d31ad;border-radius:14px;z-index:50}
 }
+
+/* ANDROID WIDTH SAFETY — impede faixa/overflow lateral */
+@media(max-width:1100px){
+ html,body{width:100%;max-width:100%;overflow-x:hidden!important}
+ body{position:relative}.wrap{width:100%!important;max-width:100%!important;margin:0!important;padding-left:10px!important;padding-right:10px!important;overflow:hidden}
+ .nav,.hero,.pills,.banner,.layout,main,.featured,.cards,.side,.footer{width:100%!important;max-width:100%!important;min-width:0!important}
+ .hero-copy,.featured .info,.card-body,.widget,.banner-q{min-width:0!important;max-width:100%!important}
+ .pills{overflow-x:auto!important}.card{width:100%!important;max-width:100%!important}.thumb{min-width:0!important}
+ img,svg,video,canvas{max-width:100%!important;height:auto}
+}
 </style></head><body>
 <div class="wrap">
 <header class="nav glass"><div class="brand">DIÁRIO DE UMA CURIOSA <i>| Ju 💜</i></div><nav class="menu"><button class="on" onclick="filterPosts('Todos')">⌂ Início</button><button onclick="filterPosts('Projetos')">▢ Projetos</button><button onclick="filterPosts('Games')">🎮 Games</button><button onclick="filterPosts('Beleza')">♡ Beleza</button><button onclick="filterPosts('TikTok')">♪ TikTok</button><button onclick="filterPosts('Tecnologia')">▣ Tecnologia</button><button onclick="filterPosts('Vida & Ideias')">♧ Vida & Ideias</button></nav><button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Abrir menu">☰</button><button class="search" onclick="toggleSearch()" aria-label="Abrir busca">⌕</button></header>
